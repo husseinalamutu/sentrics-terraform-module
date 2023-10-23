@@ -1,6 +1,5 @@
 # sentrics-terraform-module
 
-```markdown
 # Terraform EC2 Module Example
 
 This repository provides a simple example of how to use Terraform to manage EC2 instances in AWS using Terraform modules. It's a great starting point for learning about Terraform and how to structure your infrastructure code.
@@ -13,37 +12,37 @@ To get started with this project, you'll need to have Terraform and AWS CLI conf
 
 1. Clone this repository to your local machine:
 
-bash
+```bash
    git clone https://github.com/your-username/terraform-ec2-modules.git
    cd terraform-ec2-modules
-
+```
 1. Initialize Terraform in the project directory:
 
 ```bash
   terraform init
-
+```
 2. Create an execution plan:
 
 ```bash
 terraform plan
-
+```
 3. Apply the changes:
 
 ```bash
 terraform apply
-
+```
 4. Review the changes and confirm by typing "yes" when prompted.
 
 5. After Terraform has finished creating the resources, you can check the outputs:
 
 ```bash
 terraform output
-
+```
 6. To clean up and destroy the created resources:
 
 ```bash
 terraform destroy
-
+```
 ### Modules
 This Terraform project is organized into modules to demonstrate code reusability and best practices. Here are the modules used:
 
@@ -86,3 +85,4 @@ Feel free to fork this project and adapt it to your needs or use it as a learnin
 ```javascript
 
 Make sure to replace `your-username` with your actual GitHub username in the links. You can also customize the author information, project name, and additional details as needed.
+```
