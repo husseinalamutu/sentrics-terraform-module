@@ -1,6 +1,4 @@
-# sentrics-terraform-module
-
-# Terraform EC2 Module Example
+# cloud-sentrics-terraform-module-class-code
 
 This repository provides a simple example of how to use Terraform to manage EC2 instances in AWS using Terraform modules. It's a great starting point for learning about Terraform and how to structure your infrastructure code.
 
@@ -46,24 +44,24 @@ terraform destroy
 ### Modules
 This Terraform project is organized into modules to demonstrate code reusability and best practices. Here are the modules used:
 
-. ec2-instance: This module provisions an EC2 instance with the specified configuration.
+- ec2-instance: This module provisions an EC2 instance with the specified configuration.
 
 ### Configuration
 
 The project includes various configuration files:
 
-. main.tf: The main Terraform configuration file that uses the EC2 module to create EC2 instances.
-. providers.tf: Specifies the required Terraform version and the AWS provider configuration.
-. modules/ec2-instance/main.tf: The module responsible for creating EC2 instances and specifying AMI and instance type.
-. modules/ec2-instance/output.tf: Defines an output for the created EC2 instance ID.
-. modules/ec2-instance/variable.tf: Contains the module's input variables, including instance type and EC2 name tag.
+- main.tf: The main Terraform configuration file that uses the EC2 module to create EC2 instances.
+- providers.tf: Specifies the required Terraform version and the AWS provider configuration.
+- modules/ec2-instance/main.tf: The module responsible for creating EC2 instances and specifying AMI and instance type.
+- modules/ec2-instance/output.tf: Defines an output for the created EC2 instance ID.
+- modules/ec2-instance/variable.tf: Contains the module's input variables, including instance type and EC2 name tag.
 
 ### Variables
 
 The following variables are available for customization in the main.tf and module configurations:
 
-. instance_type: The type of EC2 instance to be launched (e.g., "t2.micro").
-. ec2-nametag: The name tag for the EC2 instance.
+- instance_type: The type of EC2 instance to be launched (e.g., "t2.micro").
+- ec2-nametag: The name tag for the EC2 instance.
 
 You can customize these variables in the main.tf file to fit your specific use case.
 
@@ -71,14 +69,14 @@ You can customize these variables in the main.tf file to fit your specific use c
 
 The project provides an output that can be useful for other Terraform scripts or external tools:
 
-. ec2_instance_id: The ID of the created EC2 instance.
+- ec2_instance_id: The ID of the created EC2 instance.
 
 ### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ### Author
-. [Hussein Alamutu](https://www.linkedin.com/in/hussein-alamutu)
+- [Hussein Alamutu](https://www.linkedin.com/in/hussein-alamutu)
 
 Feel free to fork this project and adapt it to your needs or use it as a learning resource for Terraform and infrastructure as code. Happy coding!
 
